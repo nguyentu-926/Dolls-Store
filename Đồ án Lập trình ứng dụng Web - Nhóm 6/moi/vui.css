@@ -1,0 +1,544 @@
+.khungde {
+    width: 1238px;
+    height: 55px;
+    background-color: #FFCBCB;
+    display:flex;
+    border-radius: 40px 20px;
+    padding-left: 30px;
+    gap:400px;
+    margin-left: 140px;
+    font-size: 16px;
+
+}
+.danchude i.fa-location-dot {
+    color: rgb(34, 164, 45); /* Đổi màu cho icon vị trí */
+}
+.danchude i.fa-envelope {
+    color: rgb(34, 164, 45); /* Đổi màu cho icon email */
+}
+.danchude a, .danchude1 a {
+    color: #7e1919;
+    text-decoration: none; /* Bỏ gạch chân ở chữ */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.danchude, .danchude1 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px;
+}
+
+
+.navigation {
+    position: relative; /* Đảm bảo phần tử cha có vị trí tương đối */
+    width: 80%;
+    height: 30px;
+    margin-top: 50px;
+    display:flex;
+}
+/* Định dạng chung cho menu */
+#nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    position: relative; /* Đảm bảo phần tử cha có vị trí tương đối */
+}
+
+#nav li a {
+    padding: 20px 12px;
+    display: block;
+    text-decoration: none;
+    color: #0cca15;
+    font-size: 20px;
+}
+
+#nav ul.subnav,
+#nav ul.subnav-1 {
+    padding: 0;
+    width: 120px;
+    position: absolute;
+    background: #fdf9f9;
+    list-style: none;
+    display: none;
+    z-index: 10; /* Đảm bảo phần tử con luôn nằm trên cùng */
+}
+#nav li:hover > ul.subnav {
+    display: block;
+}
+
+#nav ul.subnav li:hover > ul.subnav-1 {
+    display: block;
+    top: 0;
+    left: 100%; /* Đặt subnav-1 xuất hiện bên cạnh phải của phần tử cha */
+}
+
+#nav ul.subnav a,
+#nav ul.subnav-1 a {
+    font-size: 15px;
+}
+
+#nav ul.subnav li:hover a,
+#nav ul.subnav-1 li:hover a {
+    background-color: #ffe7e7;
+    color: rgb(129, 1, 86);
+}
+
+#nav li a:hover {
+    color: rgb(129, 1, 86); /* Thay đổi màu sắc khi hover */
+}
+
+#nav li:nth-child(1) a:hover,
+#nav li:nth-child(2) a:hover,
+#nav li:nth-child(3) a:hover,
+#nav li:nth-child(4) a:hover,
+#nav li:nth-child(5) a:hover,
+#nav li:nth-child(6) a:hover {
+    color: rgb(129, 1, 86); /* Thay đổi màu sắc khi hover */
+}
+
+.arrow::after {
+    content: '\203A'; /* Unicode mũi tên chỉ */
+    margin-left: 5px;
+}
+
+#nav ul.subnav li:last-child a {
+    border: none; /* Ko border cho phần cuối */
+}
+
+/* Màu nền khác khi trỏ vào các mục cụ thể */
+#nav ul.subnav li:nth-child(2):hover a,
+#nav ul.subnav-1 li:nth-child(1):hover a {
+    background-color:#FED8D7 ;/* Màu nền cho Búp bê vải */
+    color: #fff;/* Màu chữ khác cho Búp bê vải */
+}
+
+#nav ul.subnav li:nth-child(1):hover a,
+#nav ul.subnav-1 li:nth-child(2):hover a {
+    background-color: #17a2b8; /* Màu nền cho Búp bê BJD */
+    color: #fff; /* Màu chữ khác cho Búp bê BJD */
+}
+
+#nav ul.subnav li:nth-child(3):hover a,
+#nav ul.subnav-1 li:nth-child(1):hover a,
+#nav ul.subnav-1 li:nth-child(2):hover a {
+    background-color: #28a745; /* Màu nền cho Búp bê POPS */
+    color: #fff; /* Màu chữ khác cho Búp bê POPS */
+}
+
+
+.arrow::after {
+    content: '\203A'; /* Unicode mũi tên chỉ */
+    margin-left: 5px;
+}
+  #nav ul.subnav li:last-child a {
+    border: none; /* ko border cho phần cuối*/
+  }
+  .menu {
+    display:flex;
+    margin-left: 140px;
+  }
+
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  /* icon tìm kiếm*/
+  .vienicontim {
+    position: relative;
+    display: inline-block;
+}
+
+.fa-magnifying-glass {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-input {
+    position: absolute;
+    top: 0;
+    left: 0px; /* Điều chỉnh theo kích thước của icon */
+    width: 0;
+    height: 24px; /* Điều chỉnh theo kích thước của icon */
+    border: 1px solid #FFB524;
+    margin-top: 60px;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.vienicontim:hover .search-input {
+    width: 200px; /* Chiều rộng mong muốn của thanh tìm kiếm */
+    height:30px;
+    opacity: 1;
+}
+  .vienicontim {
+    width:40px;
+    height:40px;
+    border: 1px solid #FFB524;
+    border-radius: 100px;
+    font-size: 20px;
+    color:#0cca15;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+.giohang {
+    font-size: 45px;
+    color:#0cca15;
+}
+.icon{
+    display:flex;
+    gap:30px;
+    margin-left: 140px;
+}
+.icon div:hover {
+    background-color: #81C408; /* Màu nền khi hover */
+    transform: scale(1.1); /* Phóng to khi hover */
+}
+.giohang a {
+    color: inherit; /* Giữ nguyên màu của icon khi được bọc trong thẻ a */
+    text-decoration: none; /* Loại bỏ gạch chân trong thẻ a */
+}
+#banner {
+    width: 100%;
+    background-image :url("ảnh/nen.jpg");
+    margin-top:40px;
+    display: flex;
+    position:relative;
+}
+
+#banner .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+#banner  .box-left h2 {
+    font-size:48px;
+    margin-top:75px;
+    color:#fff;
+}
+
+#banner .box-left button {
+    width: 191px;
+    height: 40px;
+    margin-top:41px;
+    background:#0cca15;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+    margin-left: 50px;
+}
+
+#banner .box-left button:hover {
+    background:orange;
+}
+
+#banner .box-right {
+    padding-left:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .box-right img {
+    margin:0px 10px;
+    animation :animation 3s infinite linear; 
+}
+
+
+#banner .box-right img:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+#banner .box-right img:nth-child(2)
+{
+    
+    animation-delay: 1s;
+}
+.box-left>h2{
+    padding-left: 50px;
+}
+.box-left>p{
+    padding-left: 50px;
+}
+
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.vc1{
+    width: 200px;
+    height:200px;
+    background-color: #F4F6F8;
+    border-radius: 10px;
+}
+.vc1 i{
+    font-size: 60px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.botron{
+    width:95px;
+    height:95px;
+    background-color: #FFB524;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+.vc1 p{
+    text-align: center;
+}
+.danvc {
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.de {
+    font-size: 50px;
+    color:#81C408;
+    padding: 0px;
+    margin: 0px;
+}
+.sp {
+    width: 290px;
+    height:400px;
+    border: 1px solid #FFB524;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.spt {
+    position: relative;
+    overflow: hidden;
+    width: 290px;
+    height:290px;
+}
+.zoomanh, .sp {
+    transition: transform 0.3s ease; /* Sử dụng transition để tạo hiệu ứng mượt mà */
+}
+
+.zoomanh:hover{
+    transform: scale(1.3); /* Phóng to ảnh lên 130% khi hover */
+}
+.sp:hover{
+    transform: scale(1.05);
+}
+.gio {
+    width: 135px;
+    height: 35px;
+    border: 1px solid #FFB524;
+    border-radius: 20px;
+    color: #81C408;
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 5px;
+}
+
+.gio i {
+    margin-right: 5px; /* Khoảng cách giữa icon và văn bản */
+}
+.gio:hover {
+    background-color: #FFB524; /* Màu nền khi hover */
+}
+.dantien {
+    display:flex;
+    gap:5px;
+}
+.danbb {
+    display:flex;
+    gap:8px;
+}
+.cangiuasanpham {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-top: 30px;
+}
+.phancuoi {
+    width:1510px;
+    height:300px;
+    background-color: #FFCBCB;
+    margin-top: 20px;
+}
+
+
+.search-wrapper {
+    position: relative; 
+    width: 500px; /* Điều chỉnh độ rộng để vừa với input */
+}
+
+.search-input {
+    width: 100%; 
+    padding: 10px 50px 10px 10px; /* Thêm khoảng đệm bên phải cho không gian nút */
+    font-size: 16px;
+    border-radius: 20px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    position: absolute;
+    right: 0px; /* Đẩy nút vào trong một chút để không tràn ra ngoài */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%; /* Điều chỉnh chiều cao để nút nhỏ hơn một chút */
+    border: none;
+    background-color: #81C408; /* Màu nền của button */
+    color: #fff; /* Màu chữ của button */
+    padding: 0 15px; /* Điều chỉnh khoảng đệm ngang của button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px; /* Điều chỉnh border-radius cho phù hợp */
+}
+
+.search-button:hover {
+    background-color: #e0a01d; /* Màu nền của button khi hover */
+}
+.cacicon {
+    gap:15px;
+    display:flex;
+}
+.bordericon {
+    width: 35px;
+    height: 35px;
+    background-color: #FFCBCB;
+    border-radius: 50px;
+    border: 1px solid #e0a01d;
+    padding-left: 9px;
+    padding-top: 7px;
+    font-size: 25px;
+    color:#e0a01d;
+}
+.dantimkiem {
+    display:flex;
+    gap:40px;
+}
+.c1 {
+    font-size: 40px;
+    color:#0cca15;
+    margin:0px;
+    padding:0px;
+}
+
+.dd{
+    display:flex;
+    gap:40px;
+}
+.ke{
+    border: 0.5px solid #e0a01d;
+    width:890px;
+    margin-top: 20px;
+}
+.chu2 p{
+    font-size: 12px;
+}
+.chu2 p:hover {
+    color: #81C408; /* Màu chữ khi hover */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+}
+.nganhang {
+    display:flex;
+}
+.c4 {
+    display:flex;
+    gap:35px;
+}
+.phancuoi{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding-top: 50px;
+}
+.traitim {
+    color:red;
+    font-size: 30px;
+    display:flex;
+    gap:3px;
+    margin-top: 15px;
+}
+.dantim {
+    display:flex;
+    gap:15px;
+}
+.ngoisao {
+    color:gold;
+    font-size: 30px;
+    display:flex;
+    gap:3px;
+    margin-top: 15px;
+}
+.th1 {
+    width:220px;
+    height:275px;
+}
+.tronv {
+    width:220px;
+    height: 220px;
+    border-radius: 100px;
+    border: 1px solid #e0a01d;
+}
+.tronv img{
+    width:220px;
+    height: 220px;
+    border-radius: 100px;
+}
+.th1 p{
+    color:#e0a01d;
+    font-family: tahoma;
+    font-size: 12px;
+    text-align: center; /* Căn giữa nội dung bên trong thẻ .th1 */
+}
+.th1 {       
+     text-align: center; /* Căn giữa nội dung bên trong thẻ .th1 */
+}
+    
+.tronv {
+        width: 150px; /* Đặt kích thước cho ảnh */
+        height: 150px; /* Đặt kích thước cho ảnh */
+        overflow: hidden; /* Ẩn phần ảnh vượt quá kích thước của .tronv */
+        border-radius: 50%; /* Làm cho .tronv có dạng hình tròn */
+        margin: 0 auto; /* Căn giữa khối .tronv */
+  }
+    
+ .tronv img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi khi hover */
+        object-fit: cover; /* Đảm bảo ảnh không bị méo khi thay đổi kích thước */
+    }
+    
+ .tronv:hover img {
+        transform: scale(1.1); /* Phóng to ảnh khi hover */
+    }
+.dananhtron{
+    display:flex;
+}
+.cabai {
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    transform: scale(0.75); /* Thu nhỏ xuống 75% */
+    transform-origin: top center; /* Đặt điểm gốc của phép biến đổi ở góc trên trung tâm */
+    position: absolute; /* Hoặc sử dụng 'fixed' nếu bạn muốn phần tử cố định khi cuộn trang */
+    top: 0; /* Đặt phần tử sát mép trên của trang */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%) scale(0.75); /* Điều chỉnh vị trí và thu nhỏ */
+    width: 100%; /* Đảm bảo phần tử chiếm toàn bộ chiều rộng */
+}

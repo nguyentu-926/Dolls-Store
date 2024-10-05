@@ -1,0 +1,275 @@
+.nen1 {
+    position: relative;
+    display: inline-block; /* Hoặc block nếu muốn ảnh có kích thước đầy đủ */
+}
+
+.nen1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c92569;
+    font-size: 30px;
+    text-align: center; /* Căn giữa chữ ngang */
+}
+
+.description {
+    position: absolute;
+    top: 30%; /* Điều chỉnh vị trí của phần mô tả */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c92569;
+    font-size: 20px;
+    text-align: center; /* Căn giữa chữ ngang */
+}
+.c1 {
+    font-size: 30px;
+    color: #c92569;
+    margin-bottom: 20px;
+}
+.search-wrapper1 {
+    position: relative; 
+    width: 300px; /* Điều chỉnh độ rộng để vừa với input */
+}
+.search-input1 {
+    width: 100%; 
+    padding: 10px 50px 10px 10px; /* Thêm khoảng đệm bên phải cho không gian nút */
+    font-size: 16px;
+    border-radius: 20px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+}
+
+.search-button1 {
+    position: absolute;
+    right: 0px; /* Đẩy nút vào trong một chút để không tràn ra ngoài */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%; /* Điều chỉnh chiều cao để nút nhỏ hơn một chút */
+    border: none;
+    background-color: #81C408; /* Màu nền của button */
+    color: #fff; /* Màu chữ của button */
+    padding: 0 15px; /* Điều chỉnh khoảng đệm ngang của button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px; /* Điều chỉnh border-radius cho phù hợp */
+}
+
+.search-button1:hover {
+    background-color: #e0a01d; /* Màu nền của button khi hover */
+}
+.c2 {
+    font-size: 25px;
+    color: #c92569;
+    margin-top: 22px;
+}
+.c3 {
+    display:flex;
+    gap:5px;
+    color: #81C408;
+    margin-top: 10px;
+}
+.c3 a{
+    text-decoration: none;
+    color: #81C408;
+    transition: background-color 0.3s;
+}
+.c3 i{
+    font-size: 17px;
+}
+.c3>a:hover{
+    color: #c92569;
+}
+.dodai {
+    width: 220px; /* Độ rộng mong muốn của thanh trượt */
+}
+.b {
+    color:#81C408;
+    font-size: 17px;
+    padding-top: 10px;
+}
+.vien1 {
+    width:130px;
+    height:130px;
+    border: 1px solid #FFB524;
+    border-radius: 20px;
+    margin-top: 16px;
+}
+.vien1 img{
+    border-radius: 20px;
+    width:130px;
+    height:130px;
+}
+.dans {
+    display:flex;
+    color:gold;
+}
+.vienc{
+    display:flex;
+    gap: 10px;
+}
+.v2 img{
+    border-radius: 25px;
+}
+.k1{
+    width:320px;
+    height:1400px;
+    margin-top: 27px;
+}
+.gio1 {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #FFB524;
+    border-radius: 10px;
+    color: #81C408;
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    font-size: 20px;
+}
+.gio1:hover {
+    background-color: #FFB524; /* Màu nền khi hover */
+}
+.tooltip {
+    visibility: hidden;
+    background-color: #FFB524;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%; /* Căn chỉnh theo chiều dọc */
+    left: 100%; /* Hiển thị phía bên phải của biểu tượng */
+    transform: translate(10px, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap; /* Giữ nội dung tooltip trên một dòng */
+    z-index: 5; /* Đảm bảo phần tử con luôn nằm trên cùng */
+}
+
+.gio1:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.mua {
+    width: 98px;
+    height: 30px;
+    border: 1px solid #FFB524;
+    border-radius: 10px;
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    font-size: 20px;
+    gap:5px;
+}
+.mua p, .mua i, .gio1 i{
+    color: #81C408;
+}
+.mua:hover {
+    background-color: #FFB524; /* Màu nền khi hover */
+}
+.iconanh{
+    display:flex;
+    gap:3px;
+}
+
+/* icon trong ảnh*/
+.a1 {
+    position: relative; /* Để các phần tử bên trong có thể đặt theo tương đối */
+    display: inline-block;
+}
+
+.a1 img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ khung chứa */
+    display: block;
+    border-radius: 20px;
+}
+
+.iconanh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền bán trong suốt */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Ẩn đi mặc định */
+    transition: opacity 0.3s;
+}
+
+.a1:hover .iconanh {
+    opacity: 1; /* Hiển thị khi hover */
+}
+
+.gio1, .mua {
+    color: #fff; /* Màu biểu tượng và văn bản */
+    margin: 10px;
+    text-align: center;
+}
+
+.mua {
+    display: flex;
+    align-items: center;
+}
+
+.mua p {
+    margin: 0 5px; /* Khoảng cách giữa văn bản và các biểu tượng */
+}
+.giabb {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.mauchu1{
+    color:#c92569;
+    font-size: 13px;
+}
+.mauchu2{
+    color:orangered;
+    font-size: 12px;
+}
+.anh1{
+    width:140px;
+    height:310px;
+    border: 1px solid #FFB524;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Nền bán trong suốt */
+}
+.dancotrang {
+    display:flex;
+    gap:15px;
+}
+.daude p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#FF69B4;
+    font-size: 25px;
+}
+.daude i{
+    color:#0cca15;
+    font-size: 25px;
+    margin-top: 27px;
+}
+.daude {
+    display:flex;
+    gap:7px;
+}
+.khung1 {
+    display:flex;
+    gap:27px;
+}
+.canhgiuakhung {
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 30px;
+}

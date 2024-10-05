@@ -1,0 +1,134 @@
+
+
+/* Sidebar styles */
+.contai {
+    display: flex;
+    margin: 20px;
+}
+
+.sbar {
+    width: 25%;
+    padding-right: 20px;
+}
+
+.sbar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sbar .categories, .sbar .recent-news, .sbar .search-by-1 {
+    margin-bottom: 20px;
+}
+.sbar .text .Search-1 .categories{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #e41b1b;
+
+}
+.sbar h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #e41b1b;
+}
+
+.sbar ul {
+    padding-left: 15px;
+}
+
+.sbar ul li {
+    margin-bottom: 10px;
+    color: #1a65bb;
+}
+
+.sbar ul li span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #f16a6a;
+}
+
+.sbar .tags span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #fbd5d7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main content styles */
+.content-1 {
+    width: 75%;
+}
+
+.article-1, .article-2, .article-3, .article-4, .article-5 {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #f16a6a;
+}
+
+.article-1 img, .article-2 img, .article-3 img, .article-4 img, .article-5 img {
+    width: 30%;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.article-1-details, .article-2-details, .article-3-details, .article-4-details, .article-5-details {
+    width: 40%;
+}
+
+.article-1-details h2, .article-2-details h2, .article-3-details h2, .article-4-details h2, .article-5-details h2 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #691212;
+}
+
+.article-1-details h3, .article-2-details h3, .article-3-details h3, .article-4-details h2, .article-5-details h3 {
+    font-size: 22px;
+    color: #81C400;
+    margin: 10px 0;
+}
+
+.article-1-details p, .article-2-details p, .article-3-details p, .article-4-details p, .article-5-details p {
+    color:rgb(18, 64, 91)
+    margin-bottom: 15px;
+}
+
+.article-1-details button, .article-2-details button, .article-3-details button, .article-4-details button, .article-5-details button {
+    padding: 10px 20px;
+    background-color: #f16a6a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+.phancuoi {
+    background-color: ;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.phancuoi h4 {
+    font-size: 20px;
+    color: #81C400;
+    margin-bottom: 10px;
+}
+
+.phancuoi p {
+    color: #81C400;
+    margin-bottom: 10px;
+}
+
+.nganhang img {
+    width: 50px;
+    margin-right: 10px;
+}

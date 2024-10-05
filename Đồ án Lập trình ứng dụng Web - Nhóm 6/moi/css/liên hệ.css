@@ -1,0 +1,214 @@
+.iconlh i {
+    font-size: 35px;
+    color: #0cca15;
+    animation: shake 5s infinite;
+}
+
+.iconlh {
+    display: flex;
+    gap: 5px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.iconlhtrungtam{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.p1lh{
+    color: #0cca15;
+    font-size: 40px;
+    margin:0px;
+    padding:0px;
+}
+.mucluclh {
+    color:#FF69B4;
+    font-size: 20px;
+    margin:0px;
+    padding:0px;
+    padding-left: 20px;
+}
+.mucluclh1 {
+    color:#FF69B4;
+    font-size: 25px;
+    margin:0px;
+    padding:0px;
+    padding-left: 20px;
+}
+.ndlh {
+    display:flex;
+    gap:5px;
+    margin-left: 40px;
+}
+.ndlh i{
+    font-size: 20px;
+    color: #0cca15;
+    margin-top: 20px;
+}
+.ndlh1{
+    font-size: 20px;
+    color:#0cca15;
+}
+.ndlh2{
+    font-size: 20px;
+}
+.nhanvien {
+    display:flex;
+    gap:5px;
+    margin-left: 40px;
+}
+.nhanvien i{
+    font-size: 20px;
+    color: #0cca15;
+    margin-top: 20px;
+}
+.ndlh3{
+    font-size: 20px;
+    color:#0cca15;
+    margin:0px;
+    padding:0px;
+    margin-left: 40px;
+}
+.ndlh4{
+    font-size: 20px;
+    margin:0px;
+    padding:0px;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom:  10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#28a745;
+}
+
+.contact-form input,
+.contact-form option,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #FFB524;
+}
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom:  10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.lienketlh {
+    display:flex;
+    gap:7px;
+}
+.no-underline {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.no-underline i,
+.no-underline p {
+    text-decoration: none;
+    color:blue;
+}
+.no-underline i {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.daniconlh {
+    display:flex;
+}
+.no-underline:hover i,
+.no-underline:hover p {
+    color: #FFB524; /* Color on hover */
+}
+.additional-info {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    width:600px;
+    margin-left: 50px;
+}
+
+.additional-info h4 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.additional-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-left: 40px;
+}
+
+.additional-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.additional-info ul li {
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.additional-info ul li strong {
+    color: #333;
+}
+.giualh {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}

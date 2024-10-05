@@ -1,0 +1,39 @@
+.giohang2 {
+    position: relative; /* Thiết lập vị trí tương đối cho phần tử cha */
+    z-index: 1000; /* Đảm bảo phần tử con luôn nằm trên cùng */   
+}
+
+.giohang2 i {
+    position: relative;
+    font-size: 45px;
+    color: #0cca15;
+}
+
+.menu3 {
+    display: none;
+    position: absolute;
+    top: 40px; /* Điều chỉnh khoảng cách từ icon đến menu */
+    left: 0;
+    background-color: #fff; /* Màu nền của menu */
+    font-size: 14px; /* Điều chỉnh kích thước chữ của menu */
+    width:40px;
+}
+
+.menu3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu3 ul li {
+    padding: 5px 0;
+}
+
+.menu3 ul li a {
+    text-decoration: none;
+    color: #d3a5a5; /* Màu chữ của menu */
+}
+
+.menu3 ul li a:hover {
+    color: #000000; /* Màu chữ khi rê chuột vào */
+}
