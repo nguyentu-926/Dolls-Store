@@ -1,7 +1,7 @@
 TAT Dolls Store
 _________
 Ứng dụng Web TAT Dolls Store sở hữu giao diện thân thiện, dễ sử dụng, giúp các bé và phụ huynh dễ dàng tìm kiếm, lựa chọn và mua sắm những cô búp bê yêu thích. Với kho sản phẩm đa dạng, phong phú, cùng hệ thống thanh toán trực tuyến an toàn và tiện lợi, TAT Dolls Store cam kết mang đến cho khách hàng trải nghiệm mua sắm hoàn hảo nhất.
-***
+
 Tại sao nên lựa chọn TAT Dolls Store?
 
 Sản phẩm chất lượng cao: Búp bê TAT Dolls Store được sản xuất từ nguyên liệu cao cấp, an toàn cho sức khỏe trẻ em. Mỗi sản phẩm đều trải qua quá trình kiểm tra chất lượng nghiêm ngặt trước khi đến tay khách hàng.
